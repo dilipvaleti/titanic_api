@@ -17,6 +17,6 @@ Alternatively a simple python script:
 import requests
 import json
 url = 'https://<name-of-your-heroku-app>.herokuapp.com/predict/982'
-response = requests.post(url)
+response = requests.get(url)
 print(response.json())
 ```
