@@ -8,7 +8,7 @@ model = pickle.load(open('model.pkl','rb'))
 # app
 app = Flask(__name__)
 
-@app.route('/predict/<int:pass_id>', methods=['POST'])
+@app.route('/predict/<int:pass_id>', methods=['GET'])
 def predict(pass_id: int):
     # get data
     data = pd.read_csv('test.csv')
